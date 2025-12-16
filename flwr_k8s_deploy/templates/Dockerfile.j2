@@ -20,8 +20,12 @@ COPY {{ package_name }}/ ./{{ package_name }}/
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -e .
 
-# Create directory for model storage
-RUN mkdir -p /app/models
+# Create directory for model and data storage
+RUN mkdir -p /app/models /root/.cache/cifar10
+
+# Pre-download CIFAR-10 dataset to avoid runtime download issues
+# This caches the dataset in the Docker image
+RUN python3 -c "from torchvision import datasets; datasets.CIFAR10(root='/root/.cache/cifar10', train=True, download=True); datasets.CIFAR10(root='/root/.cache/cifar10', train=False, download=True)"
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1

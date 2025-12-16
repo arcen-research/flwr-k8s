@@ -70,7 +70,7 @@ def main():
 @main.command()
 @click.option('--project-dir', type=click.Path(), default='.', help='Project directory (default: current directory)')
 @click.option('--server-address', prompt='SuperLink server address', help='Server address (e.g., 192.168.1.100:9092)')
-@click.option('--docker-username', default='cjhisey', help='Docker Hub username')
+@click.option('--docker-username', default='your-username', help='Docker Hub username')
 @click.option('--replicas', default=2, type=int, help='Number of client replicas')
 def init(project_dir, server_address, docker_username, replicas):
     """Initialize flwr-k8s deployment configuration"""

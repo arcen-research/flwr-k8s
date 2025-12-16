@@ -11,7 +11,7 @@ DEFAULT_CONFIG = {
     },
     "docker": {
         "registry": "docker.io",
-        "username": "cjhisey",
+        "username": "your-username",
         "image_name": "flwr-client",
         "tag": "latest",
         "platforms": ["linux/amd64", "linux/arm64"],

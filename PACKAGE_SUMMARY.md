@@ -118,7 +118,7 @@ project:
 
 docker:
   registry: docker.io
-  username: cjhisey
+  username: your-username
   image_name: flwr-client
   tag: latest
   platforms:
@@ -332,7 +332,7 @@ docker:
 
 **Solution**: Check Docker Hub image exists and is public
 ```bash
-docker pull cjhisey/flwr-client:latest
+docker pull your-username/flwr-client:latest
 ```
 
 ### Issue: Pods Can't Connect to Server
