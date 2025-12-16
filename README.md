@@ -38,7 +38,7 @@ Simplify deploying Flower FL applications to Kubernetes clusters with automated 
 
 3. **Clone this deployment tool**:
    ```bash
-   git clone https://github.com/coryhighsea/flwr-k8s.git
+   git clone https://github.com/arcen-research/flwr-k8s.git
    ```
 
 Now you're ready to deploy your Flower project to Kubernetes!
