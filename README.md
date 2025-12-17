@@ -41,7 +41,11 @@ Simplify deploying Flower FL applications to Kubernetes clusters with automated 
    git clone https://github.com/arcen-research/flwr-k8s.git
    ```
 
-Now you're ready to deploy your Flower project to Kubernetes!
+## Radicle
+
+To clone this repository on Radicle, simply run:
+
+    rad clone rad:z4JDWMCvDtxMDi8fBNWCEiq3Xhhrv 
 
 ---
 
@@ -50,7 +54,7 @@ Now you're ready to deploy your Flower project to Kubernetes!
 ### From Source
 
 ```bash
-git clone https://github.com/coryhighsea/flwr-k8s.git
+git clone https://github.com/arcen-research/flwr-k8s.git
 cd flwr-k8s
 pip install -e .
 ```
